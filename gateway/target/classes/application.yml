@@ -1,0 +1,17 @@
+zuul:
+  routes:
+    api: /**
+    books:
+      url: http://localhost:8090
+
+hostNameFilter:
+  mappings:
+    - hostName: ippon.books.com
+      route: books
+
+ribbon:
+  eureka:
+    enabled: false
+
+server:
+  port: 8080
