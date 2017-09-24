@@ -3,11 +3,15 @@ zuul:
     api: /**
     books:
       url: http://localhost:8090
+    magazines:
+      url: http://localhost:8095
 
 hostNameFilter:
   mappings:
     - hostName: ippon.books.com
       route: books
+    - hostName: ippon.magazines.com
+      route: magazines
 
 ribbon:
   eureka:
