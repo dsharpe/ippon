@@ -7,3 +7,5 @@ To run this demo locally, create the following entries in your /etc/hosts file:
 This is modified from a spring example called "gs-routing-and-filtering-complete".
 
 Import the projects into your IDE as a maven project. Gradle has not been tested. Each maven project runs on a different port.
+
+The service projects are "book" and "magazine" and the Zuul gateway project is "gateway".
