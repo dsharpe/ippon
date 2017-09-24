@@ -24,7 +24,8 @@ import com.ippon.poc.hostname.HostNameProperties.Mapping;
 import com.netflix.zuul.context.RequestContext;
 
 /**
- * Simple {@link RouteLocator} based on configuration data held in {@link ZuulProperties}.
+ * Based on {@link SimpleRouteLocator} but extended to use separate host name mappings
+ * to map a host name to a Zuul route.
  */
 public class HostNameRouteLocator implements RouteLocator {
 
